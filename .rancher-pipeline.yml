@@ -2,7 +2,7 @@ stages:
 - name: Install
   steps:
   - runScriptConfig:
-      image: busybox
+      image: node:latest
       shellScript: |-
         node -v
         echo `pwd`

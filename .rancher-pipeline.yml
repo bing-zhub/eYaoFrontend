@@ -12,4 +12,11 @@ stages:
       image: busybox
       shellScript: echo 'Worked'
 timeout: 60
-notification: {}
+notification:
+  recipients:
+  - recipient: "1"
+    notifier: c-c6d5m:n-r6cmg
+  condition:
+  - Success
+  - Changed
+  - Failed
